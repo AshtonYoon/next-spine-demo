@@ -1,5 +1,8 @@
 # next-spine-demo
 
+![example](https://user-images.githubusercontent.com/16028154/203914832-75d86cf5-faa9-454c-8dc1-aa41cec40262.gif)
+
+
 Transfile packages `@esotericsoftware/spine-canvas`, `@esotericsoftware/spine-core` with `next.config.js`
 
 ``` js
