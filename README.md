@@ -1,3 +1,26 @@
+# next-spine-demo
+
+Transfile packages `@esotericsoftware/spine-canvas`, `@esotericsoftware/spine-core` with `next.config.js`
+
+``` js
+const withPlugins = require("next-compose-plugins");
+const withTM = require("next-transpile-modules")(
+  ["@esotericsoftware/spine-canvas", "@esotericsoftware/spine-core"],
+  {
+    unstable_webpack5: true,
+  }
+);
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
+};
+
+module.exports = withPlugins([withTM], [nextConfig]);
+```
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
